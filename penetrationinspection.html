@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<meta content="text/html; charset=utf-8" http-equiv="content-type">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Joint Inspection Report</title>
+		<style>
+			.inspection-report {
+				max-width: 100%;
+				height: auto;
+				padding: 0px;
+				border: 2px solid black;
+				text-align: center;
+			}
+			.image-logo {
+				width: 100%;
+				max-width: 800px;
+				height: auto;
+				border-bottom: 2px solid black;
+			}
+			.inner-div {
+				width: auto;
+				margin:auto;
+				padding: 10px;
+				line-height: 15px;
+				font-family:'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif;
+				font-size: 10px;
+				color:#555;
+			}
+			.title-div {
+				width: 100%;
+				border: 1px solid black;
+			}
+			th, td {
+				border: 1px solid black;
+				border-collapse: collapse;
+			}
+			.table-div {
+				width: 100%;
+				border: 2px solid black;
+				border-collapse: collapse;
+				margin-top: 10px;
+			}
+			
+			.th-div-first {
+				width: 30%;
+				border-right: 1px solid black;
+			}
+			.th-div-first-second {
+				width: 70%;
+				border-right: 1px solid black;
+			}
+			.th-table-first {
+				width: 22%;
+				border-right: 1px solid black;
+			}
+			.th-table-second {
+				width: 11%;
+				border-right: 1px solid black;
+			}
+			.th-table-first {
+				width: 15%;
+				border-right: 1px solid black;
+			}
+			.td-inner-table {
+				width: 15%;
+				border-right: 1px solid black;
+			}
+			.td-inner-table-two {
+				width: 7%;
+				border-right: 1px solid black;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="inspection-report">
+			<img class="image-logo" src="header.png">
+			<div class = "inner-div">
+				<div class="title-div">
+					<h2>Penetration Inspection Report</h2>
+				</div>
+				<table class="table-div" cellpadding="0" cellspacing="0">
+					<tr style="width: 100%">
+						<th class="th-div-first">Project:</th>
+						<th>#projectName#:</th>
+					</tr>
+					<tr style="width: 100%">
+						<td>Name:</td>
+						<td>#name#:</td>
+					</tr>
+					<tr style="width: 100%">
+						<td>Location:</td>
+						<td>#location#:</td>
+					</tr>
+				</table>
+				<table class="table-div" cellpadding="0" cellspacing="0">
+					<tr style="width: 100%">
+						<th class="th-div-first">Inspection Location:</th>
+						<th></th>
+					</tr>
+					<tr style="width: 100%">
+						<td>Building:</td>
+						<td>#building#:</td>
+					</tr>
+					<tr style="width: 100%">
+						<td>Floor:</td>
+						<td>#floor#:</td>
+					</tr>
+					<tr style="width: 100%">
+						<td>Room:</td>
+						<td>#room#:</td>
+					</tr>
+				</table>
+				<table class="table-div" cellpadding="0" cellspacing="0">
+					<tr style="width: 100%">
+						<th class="th-div-first">Installer:</th>
+						<th>#installer#</th>
+					</tr>
+					<tr style="width: 100%">
+						<td>Name:</td>
+						<td>#instName#:</td>
+					</tr>
+					<tr style="width: 100%">
+						<td>Email:</td>
+						<td>#email#:</td>
+					</tr>
+					<tr style="width: 100%">
+						<td>Phone:</td>
+						<td>#phone#:</td>
+					</tr>
+				</table>
+				<table class="table-div" cellpadding="0" cellspacing="0">
+					<tr style="width: 100%">
+						<th class="th-table-first">MEP App:</th>
+						<th class="th-table-second" colspan="2">Inputs</th>
+						<th class="th-table-first" colspan="1">UL/EJ System:</th>
+						<th class="th-table-second" colspan="2">#library#</th>
+						<th class="th-table-second">Results</th>
+					</tr>
+					<tr style="width: 100%">
+						<td>Penet Type:</td>
+						<td class="td-inner-table">#mepType#</td>
+						<td class="td-inner-table-two"></td>
+						<td class="td-inner-table">Penet Type:</td>
+						<td class="td-inner-table">#mepTypelib#</td>
+						<td class="td-inner-table-two"></td>
+						<td class="td-inner-table">#result1#</td>
+					</tr>
+					<tr style="width: 100%">
+						<td>Penet Access:</td>
+						<td class="td-inner-table">#penetAccess#</td>
+						<td class="td-inner-table-two"></td>
+						<td class="td-inner-table">Penet Access:</td>
+						<td class="td-inner-table">#penetAccesslib#</td>
+						<td class="td-inner-table-two"></td>
+						<td class="td-inner-table">#result2#</td>
+					</tr>
+					<tr style="width: 100%">
+						<td>Penet Size:</td>
+						<td class="td-inner-table">#penetSize#</td>
+						<td class="td-inner-table-two">mm</td>
+						<td class="td-inner-table">Penet Size:</td>
+						<td class="td-inner-table">#penetSizelib#</td>
+						<td class="td-inner-table-two">mm</td>
+						<td class="td-inner-table">#result3#</td>
+					</tr>
+					<tr style="width: 100%">
+						<td>Open Size:</td>
+						<td class="td-inner-table">#openSize#</td>
+						<td class="td-inner-table-two">mm</td>
+						<td class="td-inner-table">Open Size:</td>
+						<td class="td-inner-table">#openSizelib#</td>
+						<td class="td-inner-table-two">mm</td>
+						<td class="td-inner-table">#result4#</td>
+					</tr>
+					<tr style="width: 100%">
+						<td>Min Annular:</td>
+						<td class="td-inner-table">#minAnnular#</td>
+						<td class="td-inner-table-two">mm</td>
+						<td class="td-inner-table">Min Annular:</td>
+						<td class="td-inner-table">#minAnnlarlib#</td>
+						<td class="td-inner-table-two">mm</td>
+						<td class="td-inner-table">#result5#</td>
+					</tr>
+					<tr style="width: 100%">
+						<td>Max Annular:</td>
+						<td class="td-inner-table">#openSize#</td>
+						<td class="td-inner-table-two">mm</td>
+						<td class="td-inner-table">Open Size:</td>
+						<td class="td-inner-table">#openSizelib#</td>
+						<td class="td-inner-table-two">mm</td>
+						<td class="td-inner-table">#result6#</td>
+					</tr>
+					<tr style="width: 100%">
+						<td>FireRating:</td>
+						<td class="td-inner-table">#fireRating#</td>
+						<td class="td-inner-table-two">hr</td>
+						<td class="td-inner-table">FireRating:</td>
+						<td class="td-inner-table">#fireRatinglib#</td>
+						<td class="td-inner-table-two">hr</td>
+						<td class="td-inner-table">#result7#</td>
+					</tr>
+					<tr style="width: 100%">
+						<td>Wall/Floor:</td>
+						<td class="td-inner-table">#wf#</td>
+						<td class="td-inner-table-two"></td>
+						<td class="td-inner-table">Wall/Floor:</td>
+						<td class="td-inner-table">#wflib#</td>
+						<td class="td-inner-table-two"></td>
+						<td class="td-inner-table">#result8#</td>
+					</tr>
+					<tr style="width: 100%">
+						<td>Base Mat:</td>
+						<td class="td-inner-table">#baseMaterial#</td>
+						<td class="td-inner-table-two"></td>
+						<td class="td-inner-table">Base Mat:</td>
+						<td class="td-inner-table">#baseMateriallib#</td>
+						<td class="td-inner-table-two"></td>
+						<td class="td-inner-table">#result9#</td>
+					</tr>
+					<tr style="width: 100%">
+						<td>BM Thick:</td>
+						<td class="td-inner-table">#bmThick#</td>
+						<td class="td-inner-table-two">mm</td>
+						<td class="td-inner-table">BM Thick:</td>
+						<td class="td-inner-table">#bmThicklib#</td>
+						<td class="td-inner-table-two">mm</td>
+						<td class="td-inner-table">#result10#</td>
+					</tr>
+					<tr style="width: 100%">
+						<td>FS Mat:</td>
+						<td class="td-inner-table">#fsMaterial#</td>
+						<td class="td-inner-table-two"></td>
+						<td class="td-inner-table">FS Mat:</td>
+						<td class="td-inner-table">#fsMateriallib#</td>
+						<td class="td-inner-table-two"></td>
+						<td class="td-inner-table">#result11#</td>
+					</tr>
+					<tr style="width: 100%">
+						<td>FS Depth:</td>
+						<td class="td-inner-table">#fsDepth#</td>
+						<td class="td-inner-table-two">mm</td>
+						<td class="td-inner-table">Min Depth:</td>
+						<td class="td-inner-table">#fsDepthlib#</td>
+						<td class="td-inner-table-two">mm</td>
+						<td class="td-inner-table">#result12#</td>
+					</tr>
+					<tr style="width: 100%">
+						<td>RWDensity:</td>
+						<td class="td-inner-table">#rwDensity#</td>
+						<td class="td-inner-table-two">kg/㎥</td>
+						<td class="td-inner-table">MinDensity:</td>
+						<td class="td-inner-table">#rwDensitylib#</td>
+						<td class="td-inner-table-two">kg/㎥</td>
+						<td class="td-inner-table">#result13#</td>
+					</tr>
+					<tr style="width: 100%">
+						<td>RW Thick:</td>
+						<td class="td-inner-table">#rwThick#</td>
+						<td class="td-inner-table-two">mm</td>
+						<td class="td-inner-table">Min Thick:</td>
+						<td class="td-inner-table">#jointTypelib#</td>
+						<td class="td-inner-table-two">mm</td>
+						<td class="td-inner-table">#result14#</td>
+					</tr>
+				</table>
+				<table class="table-div" cellpadding="0" cellspacing="0">
+					<tr style="width: 100%">
+						<th class="th-div-first-second" text-align="center">Final Inspection Result</th>
+						<th>#totalResult#</th>
+					</tr>
+				</table>
+				<table class="table-div" cellpadding="0" cellspacing="0">
+					<tr style="width: 100%">
+						<th class="th-div-first">Inspector</th>
+						<th style="width:40%; border:1px solid black">MA</th>
+						<th>Signature</th>
+					</tr>
+					<tr style="width: 100%">
+						<th class="th-div-first">Name:</th>
+						<th style="width:40%; border:1px solid black">#inpectName#</th>
+						<td rowspan="4"></td>
+					</tr>
+					<tr style="width: 100%">
+						<td class="th-div-first">Email:</td>
+						<td style="width:40%; border:1px solid black">#inspectEmail#</td>
+					</tr>
+					<tr style="width: 100%">
+						<td class="th-div-first">Phone:</td>
+						<td style="width:40%; border:1px solid black">#inspectPhone#</td>
+					</tr>
+					<tr style="width: 100%">
+						<td class="th-div-first">Date:</td>
+						<td style="width:40%; border:1px solid black">#inspectDate#</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</body>
+</html>
